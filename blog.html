@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Emerging Philosophy of AI Biosecurity | Zaixi Zhang</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #fff;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* Header & Navigation */
+        .nav-links {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            margin: 0 12px;
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .nav-links a:hover {
+            color: #000;
+        }
+
+        /* Title Section */
+        .post-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .post-title {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .post-subtitle {
+            font-size: 1.2em;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-meta {
+            font-size: 0.9em;
+            color: #888;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .post-meta .author {
+            color: #555;
+            font-weight: 500;
+        }
+
+        .post-meta .tags {
+            margin-top: 8px;
+        }
+
+        .post-meta .tag {
+            display: inline-block;
+            background: #f5f5f5;
+            padding: 3px 10px;
+            border-radius: 3px;
+            margin: 2px;
+            font-size: 0.85em;
+        }
+
+        /* Content */
+        .post-content {
+            margin-top: 40px;
+        }
+
+        .post-content p {
+            margin-bottom: 1.5em;
+            text-align: justify;
+        }
+
+        .post-content h2 {
+            font-size: 1.6em;
+            color: #1a1a1a;
+            margin-top: 2.5em;
+            margin-bottom: 0.8em;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .post-content h3 {
+            font-size: 1.3em;
+            color: #333;
+            margin-top: 2em;
+            margin-bottom: 0.6em;
+        }
+
+        /* Lead paragraph */
+        .lead {
+            font-size: 1.15em;
+            color: #444;
+            line-height: 1.9;
+        }
+
+        /* Images */
+        .post-image {
+            margin: 2.5em 0;
+            text-align: center;
+        }
+
+        .post-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .post-image figcaption {
+            margin-top: 12px;
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+            line-height: 1.5;
+            padding: 0 20px;
+        }
+
+        /* Emphasis & Quotes */
+        .highlight {
+            background: linear-gradient(to bottom, transparent 60%, #fff3cd 60%);
+            padding: 0 2px;
+        }
+
+        blockquote {
+            margin: 2em 0;
+            padding: 20px 30px;
+            background: #f9f9f9;
+            border-left: 4px solid #003d7a;
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Concepts */
+        .concept {
+            font-weight: 600;
+            color: #003d7a;
+        }
+
+        /* Conclusion Box */
+        .conclusion {
+            margin-top: 3em;
+            padding: 30px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 8px;
+            border-left: 4px solid #003d7a;
+        }
+
+        .conclusion h3 {
+            margin-top: 0;
+            color: #003d7a;
+        }
+
+        /* Footer */
+        .post-footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+            text-align: center;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #003d7a;
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 0.95em;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Comments Section */
+        .comments-section {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid #eee;
+        }
+
+        .comments-section h3 {
+            font-size: 1.4em;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        #disqus_thread {
+            margin-top: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 15px;
+            }
+
+            .post-title {
+                font-size: 1.8em;
+            }
+
+            body {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="mailto:zz8680@princeton.edu">Email</a>
+            <a href="https://scholar.google.com/citations?hl=zh-CN&user=EL4wCtUAAAAJ">Google Scholar</a>
+            <a href="https://github.com/zaixizhang">GitHub</a>
+        </nav>
+
+        <!-- Post Header -->
+        <header class="post-header">
+            <h1 class="post-title">The Emerging Philosophy of AI Biosecurity</h1>
+            <p class="post-subtitle">Reflections on the NeurIPS 2025 Biosecurity Safeguards Workshop</p>
+            <div class="post-meta">
+                <span class="author">Zaixi Zhang</span><br>
+                <span>December 2025</span>
+                <div class="tags">
+                    <span class="tag">AI Safety</span>
+                    <span class="tag">Synthetic Biology</span>
+                    <span class="tag">Future of Science</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content -->
+        <article class="post-content">
+            <p class="lead">
+                The atmosphere at NeurIPS 2025 felt different. For years, the intersection of AI and Biology was a purely optimistic frontier—a race to fold every protein and map every cell to cure disease. But this year, the conversation shifted. As we move from tools that analyze biology to agents that can engineer it, we are no longer just reading the book of life; we are picking up the pen.
+            </p>
+
+            <p>
+                The "Biosecurity Safeguards" workshop was a reckoning. It highlighted a growing consensus that our current safety paradigms are insufficient for the era of Generative Biology. The discussions were not just about code, but about responsibility, history, and the survival of our species.
+            </p>
+
+            <p>
+                Here is a look at the emerging philosophy of AI Biosecurity, exploring how we navigate the thin line between a cure and a catastrophe.
+            </p>
+
+            <!-- Section 1 -->
+            <h2>1. Visualizing the Unseen Risk: The "Empty Quadrant"</h2>
+
+            <p>
+                To understand what is at stake, we need a map of the biological danger zone. Megan Blewett (Scion Life Sciences) provided the most compelling conceptual framework of the workshop: the <span class="concept">"Empty Quadrant."</span>
+            </p>
+
+            <p>
+                In the natural world, viruses usually face an evolutionary trade-off. A virus that kills its host too quickly (like Ebola) struggles to spread widely. A virus that spreads easily (like Measles) is usually less lethal. Nature has not populated the top-right corner of this graph—high lethality and high transmissibility—because it is evolutionarily disadvantageous.
+            </p>
+
+            <p>
+                The core fear discussed at NeurIPS is that Generative AI breaks this evolutionary tradeoff. An AI optimized for specific biological constraints does not care about evolutionary history; it optimizes for the function it is given. Without robust guardrails, AI could theoretically guide human actors into this "Empty Quadrant," stabilizing pathogens that nature would otherwise discard.
+            </p>
+
+            <figure class="post-image">
+                <img src="./figures/blog1.png" alt="Empty Quadrant Chart showing Transmissibility vs Severity">
+                <figcaption><strong>Figure 1:</strong> The "Empty Quadrant" represents a theoretical zone of pathogens with both high lethality and high transmissibility. While nature rarely produces viruses in this zone due to evolutionary trade-offs, AI optimization could potentially bridge this gap.</figcaption>
+            </figure>
+
+            <!-- Section 2 -->
+            <h2>2. The Illusion of Safety: Why "Unlearning" Fails</h2>
+
+            <p>
+                If the risk is clear, why aren't our current defenses working? The prevailing strategy has been "Safety Alignment"—training models to refuse harmful requests. However, research presented by Peter Henderson and the GeneBreaker team shattered this illusion.
+            </p>
+
+            <p>
+                They identified a <span class="concept">"Bubble of Risk."</span> Current safety evaluations are static—they test the model as it exists on the server. But in the real world, models are adapted and fine-tuned by users. Henderson showed that "unlearning" is fragile; dangerous capabilities can be recovered from a "safe" model with just a handful of data points. Even worse, larger models are often more vulnerable to these jailbreaks because their deeper understanding of biology allows them to generalize harm more effectively.
+            </p>
+
+            <figure class="post-image">
+                <img src="./ZaixiZhang_files/blog2.png" alt="Bubble of Risk Diagram">
+                <figcaption><strong>Figure 2:</strong> The fragility of safety alignment. Research demonstrates that fine-tuning a "safe" model on a small amount of viral data (or even benign examples) can rapidly degrade its safety guardrails, recovering dangerous capabilities.</figcaption>
+            </figure>
+
+            <!-- Section 3 -->
+            <h2>3. A New Paradigm: The "Scientist AI"</h2>
+
+            <p>
+                If we can't trust the model's weights to hold safety information, we need to rethink the architecture itself. Yoshua Bengio proposed a philosophical restructuring of how we build these systems, termed <span class="concept">"Scientist AI."</span>
+            </p>
+
+            <p>
+                The problem, Bengio argues, is Agency. Most modern AI agents are trained to achieve goals. If an agent's goal is to "maximize biological activity," it might inadvertently create a toxin to achieve that score.
+            </p>
+
+            <p>
+                Bengio proposes decoupling <em>Epistemic Understanding</em> (knowing how the world works) from <em>Agency</em> (acting on the world). A "Scientist AI" functions as a Probabilistic Oracle—a neutral observer that understands the causal laws of biology but has no desire to change the state of the world. It serves as a monitor, calculating the probability of harm for a proposed experiment and possessing "veto power," but never initiating the dangerous action itself.
+            </p>
+
+            <figure class="post-image">
+                <img src="./figures/blog3.png" alt="Scientist AI Framework Diagram">
+                <figcaption><strong>Figure 3:</strong> Decoupling Agency from Understanding. The "Scientist AI" framework proposes an architecture where the AI acts as a knowledgeable observer (Oracle) rather than a goal-seeking agent, minimizing the risk of unintended consequences.</figcaption>
+            </figure>
+
+            <!-- Section 4 -->
+            <h2>4. The "Spirit of Asilomar": Governing the Ungovernable</h2>
+
+            <p>
+                Perhaps the most resonant theme of the workshop was historical. Russ Altman (Stanford) invoked the <span class="concept">"Spirit of Asilomar,"</span> referencing the famous 1975 conference where biologists voluntarily paused DNA research to establish safety guidelines.
+            </p>
+
+            <p>
+                Altman argues we are at a "New Asilomar" moment. Since no single technical fix is perfect, he proposed a framework of <span class="concept">"Compounding Mitigations."</span> We must stack imperfect layers—human ethics reviews, automated red-teaming, and technical filters—to create a "Swiss Cheese Model" of defense where the holes do not align.
+            </p>
+
+            <figure class="post-image">
+                <img src="./figures/blog4.png" alt="Swiss Cheese Model of Defense">
+                <figcaption><strong>Figure 4:</strong> Reviving the Spirit of Asilomar. Russ Altman advocates for "Compounding Mitigations," a strategy of stacking technical, institutional, and social safeguards to create a robust defense-in-depth against biological misuse.</figcaption>
+            </figure>
+
+            <!-- Section 5 -->
+            <h2>5. Towards 2026: The Loop of Physical Intelligence</h2>
+
+            <p>
+                Looking ahead, the future of discovery lies in closing the loop between the digital and physical worlds. The vision for 2026 is the convergence of Digital Organisms, AI Scientists, and Physical Intelligence.
+            </p>
+
+            <p>
+                We are seeing the rise of autonomous agents capable of formulating hypotheses and writing code—integrated directly with robotic wet labs, as showcased by Le Cong's <span class="concept">LabOS</span>. These agents will not just output data; they will drive robots to pipette fluids, culture cells, and run experiments to validate their own predictions. This creates a self-improving loop where the Virtual Cell simulates a result, the AI Scientist plans the test, and the Physical Intelligence executes it.
+            </p>
+
+            <figure class="post-image">
+                <img src="./figures/blog5.png" alt="LabOS System showing Digital and Physical Integration">
+                <figcaption><strong>Figure 5:</strong> Bridging the Digital and Physical. The LabOS system demonstrates the future of "Physical Intelligence," where AI agents integrate directly with automated wet labs (robots) to execute experiments and validate predictions safely.</figcaption>
+            </figure>
+
+            <!-- Conclusion -->
+            <div class="conclusion">
+                <h3>The Verdict</h3>
+                <p>
+                    The lesson from NeurIPS 2025 is clear: As we hand over the keys of discovery to autonomous agents, our role shifts from "operator" to "architect." We must build the guardrails, the maps, and the ethical compass into the system itself.
+                </p>
+            </div>
+        </article>
+
+        <!-- Comments Section -->
+        <section class="comments-section">
+            <h3>Comments</h3>
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+                 */
+                var disqus_config = function () {
+                    // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.url = window.location.href;
+
+                    // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    this.page.identifier = 'ai-biosecurity-philosophy';
+                };
+
+                (function() {
+                    var d = document, s = d.createElement('script');
+
+                    // IMPORTANT: Replace 'YOUR-DISQUS-SHORTNAME' with your Disqus shortname
+                    // To get a shortname, register at https://disqus.com/admin/create/
+                    s.src = 'https://zaixizhang.disqus.com/embed.js';
+
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </section>
+
+        <!-- Footer -->
+        <footer class="post-footer">
+            <a href="index.html" class="back-link">&larr; Back to Home</a>
+        </footer>
+    </div>
+</body>
+</html>
